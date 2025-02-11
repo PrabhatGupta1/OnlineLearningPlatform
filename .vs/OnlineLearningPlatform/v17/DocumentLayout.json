@@ -1,0 +1,149 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\Prabhat\\Learn Asp.net Core\\OnlineLearningPlatform\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D45C8B39-55CC-4192-9013-5EEAC3D0E373}|OnlineLearningPlatform.csproj|f:\\prabhat\\learn asp.net core\\onlinelearningplatform\\views\\course\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D45C8B39-55CC-4192-9013-5EEAC3D0E373}|OnlineLearningPlatform.csproj|solutionrelative:views\\course\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D45C8B39-55CC-4192-9013-5EEAC3D0E373}|OnlineLearningPlatform.csproj|f:\\prabhat\\learn asp.net core\\onlinelearningplatform\\views\\course\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D45C8B39-55CC-4192-9013-5EEAC3D0E373}|OnlineLearningPlatform.csproj|solutionrelative:views\\course\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D45C8B39-55CC-4192-9013-5EEAC3D0E373}|OnlineLearningPlatform.csproj|f:\\prabhat\\learn asp.net core\\onlinelearningplatform\\controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D45C8B39-55CC-4192-9013-5EEAC3D0E373}|OnlineLearningPlatform.csproj|solutionrelative:controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D45C8B39-55CC-4192-9013-5EEAC3D0E373}|OnlineLearningPlatform.csproj|f:\\prabhat\\learn asp.net core\\onlinelearningplatform\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D45C8B39-55CC-4192-9013-5EEAC3D0E373}|OnlineLearningPlatform.csproj|solutionrelative:views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D45C8B39-55CC-4192-9013-5EEAC3D0E373}|OnlineLearningPlatform.csproj|f:\\prabhat\\learn asp.net core\\onlinelearningplatform\\views\\profile\\myprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D45C8B39-55CC-4192-9013-5EEAC3D0E373}|OnlineLearningPlatform.csproj|solutionrelative:views\\profile\\myprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D45C8B39-55CC-4192-9013-5EEAC3D0E373}|OnlineLearningPlatform.csproj|f:\\prabhat\\learn asp.net core\\onlinelearningplatform\\controllers\\enrollmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D45C8B39-55CC-4192-9013-5EEAC3D0E373}|OnlineLearningPlatform.csproj|solutionrelative:controllers\\enrollmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D45C8B39-55CC-4192-9013-5EEAC3D0E373}|OnlineLearningPlatform.csproj|f:\\prabhat\\learn asp.net core\\onlinelearningplatform\\models\\enrollment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D45C8B39-55CC-4192-9013-5EEAC3D0E373}|OnlineLearningPlatform.csproj|solutionrelative:models\\enrollment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D45C8B39-55CC-4192-9013-5EEAC3D0E373}|OnlineLearningPlatform.csproj|f:\\prabhat\\learn asp.net core\\onlinelearningplatform\\areas\\identity\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D45C8B39-55CC-4192-9013-5EEAC3D0E373}|OnlineLearningPlatform.csproj|solutionrelative:areas\\identity\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_LoginPartial.cshtml",
+              "DocumentMoniker": "F:\\Prabhat\\Learn Asp.net Core\\OnlineLearningPlatform\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "F:\\Prabhat\\Learn Asp.net Core\\OnlineLearningPlatform\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_LoginPartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-05T19:26:40.704Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "F:\\Prabhat\\Learn Asp.net Core\\OnlineLearningPlatform\\Views\\Course\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Course\\Index.cshtml",
+              "ToolTip": "F:\\Prabhat\\Learn Asp.net Core\\OnlineLearningPlatform\\Views\\Course\\Index.cshtml",
+              "RelativeToolTip": "Views\\Course\\Index.cshtml",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAAABQAAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-05T19:12:34.26Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MyProfile.cshtml",
+              "DocumentMoniker": "F:\\Prabhat\\Learn Asp.net Core\\OnlineLearningPlatform\\Views\\Profile\\MyProfile.cshtml",
+              "RelativeDocumentMoniker": "Views\\Profile\\MyProfile.cshtml",
+              "ToolTip": "F:\\Prabhat\\Learn Asp.net Core\\OnlineLearningPlatform\\Views\\Profile\\MyProfile.cshtml",
+              "RelativeToolTip": "Views\\Profile\\MyProfile.cshtml",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAAADgAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-05T18:43:54.167Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EnrollmentsController.cs",
+              "DocumentMoniker": "F:\\Prabhat\\Learn Asp.net Core\\OnlineLearningPlatform\\Controllers\\EnrollmentsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EnrollmentsController.cs",
+              "ToolTip": "F:\\Prabhat\\Learn Asp.net Core\\OnlineLearningPlatform\\Controllers\\EnrollmentsController.cs",
+              "RelativeToolTip": "Controllers\\EnrollmentsController.cs",
+              "ViewState": "AQIAAGcAAAAAAAAAAAAuwKUAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T15:21:52.448Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Enrollment.cs",
+              "DocumentMoniker": "F:\\Prabhat\\Learn Asp.net Core\\OnlineLearningPlatform\\Models\\Enrollment.cs",
+              "RelativeDocumentMoniker": "Models\\Enrollment.cs",
+              "ToolTip": "F:\\Prabhat\\Learn Asp.net Core\\OnlineLearningPlatform\\Models\\Enrollment.cs",
+              "RelativeToolTip": "Models\\Enrollment.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwAYAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T15:03:16.489Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "F:\\Prabhat\\Learn Asp.net Core\\OnlineLearningPlatform\\Views\\Course\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Course\\Details.cshtml",
+              "ToolTip": "F:\\Prabhat\\Learn Asp.net Core\\OnlineLearningPlatform\\Views\\Course\\Details.cshtml",
+              "RelativeToolTip": "Views\\Course\\Details.cshtml",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAAADMAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-04T04:51:55.746Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "F:\\Prabhat\\Learn Asp.net Core\\OnlineLearningPlatform\\Areas\\Identity\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "F:\\Prabhat\\Learn Asp.net Core\\OnlineLearningPlatform\\Areas\\Identity\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Areas\\Identity\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwBQAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T03:51:29.137Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CourseController.cs",
+              "DocumentMoniker": "F:\\Prabhat\\Learn Asp.net Core\\OnlineLearningPlatform\\Controllers\\CourseController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CourseController.cs",
+              "ToolTip": "F:\\Prabhat\\Learn Asp.net Core\\OnlineLearningPlatform\\Controllers\\CourseController.cs",
+              "RelativeToolTip": "Controllers\\CourseController.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAQwBwAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T19:04:10.861Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

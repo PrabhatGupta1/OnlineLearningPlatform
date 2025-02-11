@@ -1,0 +1,147 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using OnlineLearningPlatform.Areas.Identity.Data
+@using OnlineLearningPlatform.Utility
+@model OnlineLearningPlatform.Models.Course
+
+@inject UserManager<ApplicationUser> UserManager;
+
+@{
+    var user = await UserManager.GetUserAsync(User);
+}
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@{
+    if (TempData["Enroll_Success"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <strong>Success!</strong> @TempData["Enroll_Success"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+    if (TempData["Enroll_Failure"] != null)
+    {
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <strong>Failure! </strong> @TempData["Enroll_Failure"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
+}
+
+
+<div class="container">
+    
+    <div class="row mt-5">
+        <div class="col-sm-6">
+            <h2 class="py-2">@Html.DisplayFor(model => model.Title)</h2>
+            <p class="py-2">@Html.DisplayFor(model => model.Description)</p>
+            <h4 class="py-2">By @Html.DisplayFor(model => model.InstructorId)</h4>
+            <b class="text-muted py-2">@Html.DisplayFor(model => model.Language),</b>
+            <b class="text-muted py-2">@Html.DisplayFor(model => model.Level)</b>
+            <h4 class="text-success py-2">Rs. @Html.DisplayFor(model => model.Price)</h4>
+            <p>Last Updated @Html.DisplayFor(model => model.CreatedAt)</p>
+            <div>
+                @{
+                    if (User.IsInRole(StaticUserRoles.Role_Instructor) && user.FullName.Equals(Model.InstructorId))
+                    {
+                        <a class="btn btn-outline-dark" asp-action="Edit" asp-route-id="@Model?.CourseId">Edit</a>
+                        //<a class="btn btn-outline-primary" asp-controller="Lesson" asp-action="Create" asp-route-id="@Model?.CourseId"> Lessons</a>
+                        <a class="btn btn-outline-primary" asp-controller="Lesson" asp-action="CourseLesson" asp-route-id="@Model?.CourseId">Manage Lessons</a>
+                    } else
+                    {
+                        if (ViewBag.isEnrolled != null && ViewBag.isEnrolled == true)
+                        {
+                            <a class="btn btn-outline-primary" asp-controller="Lesson" asp-action="CourseLesson" asp-route-id="@Model?.CourseId">See Lesson</a>
+                        }
+                        else
+                        {
+                            if (user != null)
+                            {
+                                <form class="d-inline" asp-action="Create" asp-controller="Enrollments" method="post">
+                                    <input type="hidden" name="UserID" value="@(user.Id)" />
+                                    <input type="hidden" name="CourseID" value="@Model.CourseId" />
+                                    <input type="hidden" name="Status" value="Active" />
+                                    <input class="btn btn-success" type="submit" value="Enroll" />
+                                </form>
+                            } else
+                            {
+                                <a class="btn btn-success" id="login" asp-area="Identity" asp-page="/Account/Login">Enroll</a>
+                            }
+                        } 
+                    }
+                }
+                @* <a class="btn btn-outline-success" asp-action="Index">Back to Courses</a> *@
+                
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <img class="rounded h-100 w-50" src="~/Images/CourseThumbnails/@Html.DisplayFor(model => model.ThumbnailPath)" />
+        </div>
+    </div>
+
+
+
+    @* <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+        <dt class = "col-sm-2">
+            Instructor @* @Html.DisplayNameFor(model => model.InstructorId)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.InstructorId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CategoryId)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CategoryId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Language)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Language)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Level)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Level)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ThumbnailPath)
+        </dt>
+        <dd class = "col-sm-10">
+            <img src="~/Images/CourseThumbnails/@Html.DisplayFor(model => model.ThumbnailPath)" />
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CreatedAt)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CreatedAt)
+        </dd>
+    </dl> *@
+
+</div>
+

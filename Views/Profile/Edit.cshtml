@@ -1,0 +1,55 @@
+﻿@model OnlineLearningPlatform.Models.ApplicationUserViewModel
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Edit Your Profile</h1>
+
+@* <h4>ApplicationUserViewModel</h4> *@
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group p-2">
+                <label asp-for="FullName" class="control-label py-2"></label>
+                <input asp-for="FullName" class="form-control" />
+                <span asp-validation-for="FullName" class="text-danger"></span>
+            </div>
+            @* 
+            <div class="form-group">
+                <label asp-for="CreatedAt" class="control-label"></label>
+                <input asp-for="CreatedAt" class="form-control" />
+                <span asp-validation-for="CreatedAt" class="text-danger"></span>
+            </div> *@
+            
+            <div class="form-group p-2">
+                <label asp-for="ProfilePicture" class="control-label py-2"></label>
+                <div class="my-3 text-center border">
+                    <img src="~/Images/@(Model.ProfilePicPath != null ? "ProfilePictures/" + Model.ProfilePicPath : "AppImages/EmptyProfilePic.jpg")" class="rounded-circle my-3" style="width: 150px; height: 150px;" />
+                </div>
+                <input asp-for="ProfilePicture" class="form-control btn-outline-success" />
+                <span asp-validation-for="ProfilePicture" class="text-danger"></span>
+            </div>
+            <div class="form-group p-2">
+                <label asp-for="Bio" class="control-label py-2"></label>
+                <input asp-for="Bio" class="form-control" />
+                <span asp-validation-for="Bio" class="text-danger"></span>
+            </div>
+            <div class="form-group p-2 my-2">
+                <a class="btn btn-outline-success" asp-controller="Profile" asp-action="MyProfile">Back to Profile</a>
+                <input type="submit" value="Save" class="btn btn-success" />
+                
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,76 @@
+﻿@using OnlineLearningPlatform.Utility
+@model IEnumerable<OnlineLearningPlatform.Models.Lesson>
+
+@{
+    ViewData["Title"] = "CourseLesson";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1 class="py-2">CourseLesson</h1>
+
+@{
+    if (User.IsInRole(StaticUserRoles.Role_Instructor))
+    {
+        <p>
+            <a class="btn btn-success" asp-action="Create" asp-route-id="@ViewBag.CourseID">Create New Lesson</a>
+        </p>
+    }
+}
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Sr. No.@* @Html.DisplayNameFor(model => model.OrderIndex) *@
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Duration) (in min)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CreatedAt)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VideoURL)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.OrderIndex)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Title)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Duration)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.CreatedAt)
+                </td>
+
+                <td>
+                    <a target="_blank" href="@Html.DisplayFor(modelItem => item.VideoURL)">View Video</a>
+                </td>
+                <td>
+                    @{
+                        if (User.IsInRole(StaticUserRoles.Role_Instructor))
+                        {
+                            <a class="btn btn-success" asp-action="Edit" asp-route-id="@item.LessonID">Edit</a>
+                            <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.LessonID">Delete</a>
+                            <a class="btn btn-primary" asp-action="Details" asp-route-id="@item.LessonID">Details</a>
+                        }
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
